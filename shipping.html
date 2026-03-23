@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FurrowFlow - Shipping Information</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .shipping-hero {
+      background: #4a5568;
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .shipping-note {
+      background: #f0fff4;
+      border-left: 4px solid #48bb78;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 5px;
+    }
+    
+    .zone-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .zone-table th {
+      background: #2d3748;
+      color: white;
+      padding: 1rem;
+      text-align: left;
+    }
+    
+    .zone-table td {
+      padding: 1rem;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .zone-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .zone-table tr:hover {
+      background: #f7fafc;
+    }
+    
+    .international-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <h1>Furrow<span>Flow</span></h1>
+        <p>Seeds · Tools · Growth</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shipping.html" class="active">Shipping</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="shipping-hero">
+    <div class="container">
+      <h2 style="font-size:2.5rem; margin-bottom:1rem;">Shipping Information</h2>
+      <p style="font-size:1.2rem; max-width:700px; margin:0 auto;">Fast, reliable delivery across Lesotho and neighboring countries</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="shipping-note">
+      <h3 style="color:#2f855a; margin-bottom:0.5rem;">🚚 Free Shipping on Orders Over M500</h3>
+      <p>For orders above M500 within Maseru urban area, delivery is free. For orders above M1,000, free delivery anywhere in Lesotho!</p>
+    </div>
+
+    <h2 class="section-title">Domestic Shipping (Lesotho)</h2>
+    
+    <table class="zone-table">
+      <thead>
+        <tr>
+          <th>Zone</th>
+          <th>Districts</th>
+          <th>Delivery Time</th>
+          <th>Standard Shipping</th>
+          <th>Express Shipping</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Zone 1</strong></td>
+          <td>Maseru Urban</td>
+          <td>1-2 business days</td>
+          <td>M50</td>
+          <td>M100 (same day)</td>
+        </tr>
+        <tr>
+          <td><strong>Zone 2</strong></td>
+          <td>Maseru District (rural), Berea</td>
+          <td>2-3 business days</td>
+          <td>M80</td>
+          <td>M150</td>
+        </tr>
+        <tr>
+          <td><strong>Zone 3</strong></td>
+          <td>Leribe, Butha-Buthe</td>
+          <td>3-4 business days</td>
+          <td>M120</td>
+          <td>M220</td>
+        </tr>
+        <tr>
+          <td><strong>Zone 4</strong></td>
+          <td>Mafeteng, Mohale's Hoek</td>
+          <td>3-4 business days</td>
+          <td>M120</td>
+          <td>M220</td>
+        </tr>
+        <tr>
+          <td><strong>Zone 5</strong></td>
+          <td>Quthing, Qacha's Nek</td>
+          <td>4-5 business days</td>
+          <td>M150</td>
+          <td>M280</td>
+        </tr>
+        <tr>
+          <td><strong>Zone 6</strong></td>
+          <td>Thaba-Tseka, Mokhotlong</td>
+          <td>5-6 business days</td>
+          <td>M180</td>
+          <td>M320</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="section-title" style="margin-top:3rem;">International Shipping</h2>
+    
+    <div class="international-info">
+      <div class="shipping-card">
+        <h3>South Africa</h3>
+        <ul class="shipping-list">
+          <li>Delivery: 5-7 business days</li>
+          <li>Cost: M250 flat rate</li>
+          <li>Free over M2,000</li>
+          <li>Tracking included</li>
+        </ul>
+      </div>
+      
+      <div class="shipping-card">
+        <h3>Botswana</h3>
+        <ul class="shipping-list">
+          <li>Delivery: 7-10 business days</li>
+          <li>Cost: M350 flat rate</li>
+          <li>Free over M2,500</li>
+          <li>Tracking included</li>
+        </ul>
+      </div>
+      
+      <div class="shipping-card">
+        <h3>Zimbabwe</h3>
+        <ul class="shipping-list">
+          <li>Delivery: 7-10 business days</li>
+          <li>Cost: M400 flat rate</li>
+          <li>Free over M3,000</li>
+          <li>Tracking included</li>
+        </ul>
+      </div>
+      
+      <div class="shipping-card">
+        <h3>Other SADC Countries</h3>
+        <ul class="shipping-list">
+          <li>Delivery: 10-14 business days</li>
+          <li>Cost: M500-M800</li>
+          <li>Customs duties apply</li>
+          <li>Contact for quote</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="background:white; padding:2rem; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1); margin:3rem 0;">
+      <h3 style="color:#2d3748; margin-bottom:1rem;">Important Shipping Notes</h3>
+      <ul style="list-style: none;">
+        <li style="padding:0.5rem 0; display:flex; gap:0.5rem;">
+          <span style="color:#48bb78;">✓</span> 
+          <strong>Seed shipments:</strong> All seeds comply with international phytosanitary regulations
+        </li>
+        <li style="padding:0.5rem 0; display:flex; gap:0.5rem;">
+          <span style="color:#48bb78;">✓</span> 
+          <strong>Tracking:</strong> All shipments include SMS and email tracking
+        </li>
+        <li style="padding:0.5rem 0; display:flex; gap:0.5rem;">
+          <span style="color:#48bb78;">✓</span> 
+          <strong>Local pickup:</strong> Available at our Pitso Ground warehouse (M-F, 8am-5pm)
+        </li>
+        <li style="padding:0.5rem 0; display:flex; gap:0.5rem;">
+          <span style="color:#48bb78;">✓</span> 
+          <strong>Bulk orders:</strong> Special rates available for orders over M5,000
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>FurrowFlow</h3>
+          <p>Your trusted partner in sustainable agriculture since 2020. Based in Maseru, serving all of Lesotho.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="shipping.html">Shipping Info</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <ul>
+            <li>📍 Pitso Ground, Maseru</li>
+            <li>📞 +266 6204 9526</li>
+            <li>✉️ itumelengsematle@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FurrowFlow. All rights reserved. | Designed for Lesotho's farmers</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

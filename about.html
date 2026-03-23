@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FurrowFlow - About Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .about-story {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      margin: 3rem 0;
+    }
+    
+    .about-image {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    
+    .about-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .values-list {
+      list-style: none;
+      margin-top: 1.5rem;
+    }
+    
+    .values-list li {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .values-list li::before {
+      content: '🌱';
+      font-size: 1.2rem;
+    }
+    
+    @media (max-width: 768px) {
+      .about-story {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <h1>Furrow<span>Flow</span></h1>
+        <p>Seeds · Tools · Growth</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="shipping.html">Shipping</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">About FurrowFlow</h2>
+    
+    <div class="about-story">
+      <div class="about-image">
+        <img src="images/ab.jpg" alt="Itumeleng Sematle, Founder of FurrowFlow">
+      </div>
+      <div>
+        <h3 style="color:#2d3748; margin-bottom:1rem;">Our Story</h3>
+        <p style="margin-bottom:1rem;">FurrowFlow was founded in 2020 by <strong>Itumeleng Sematle</strong>, a passionate agronomist from Maseru who saw the need for quality, affordable agricultural supplies tailored to Lesotho's unique climate and soil conditions.</p>
+        <p style="margin-bottom:1rem;">What started as a small seed exchange among local farmers has grown into a trusted supplier serving over 1,500 farmers across all 10 districts of Lesotho. Our name, FurrowFlow, reflects our commitment to the life-giving flow of water through irrigation furrows that sustain Lesotho's agriculture.</p>
+        <p>Today, we offer over 200 products including seeds, tools, fertilizers, and irrigation systems – all carefully selected for local conditions. We're proud to support Lesotho's farmers from smallholders to commercial operations.</p>
+      </div>
+    </div>
+    
+    <div style="margin: 4rem 0;">
+      <h3 style="color:#2d3748; text-align:center; margin-bottom:2rem;">Our Values</h3>
+      <ul class="values-list" style="max-width:800px; margin:0 auto;">
+        <li><strong>Quality First:</strong> Every product is tested for Lesotho conditions</li>
+        <li><strong>Sustainable Practices:</strong> Promoting water conservation and organic methods</li>
+        <li><strong>Farmer Education:</strong> Free growing guides and workshops</li>
+        <li><strong>Local Support:</strong> Based in Maseru with local delivery and pickup</li>
+        <li><strong>Fair Pricing:</strong> Making quality inputs accessible to all farmers</li>
+      </ul>
+    </div>
+    
+  
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>FurrowFlow</h3>
+          <p>Your trusted partner in sustainable agriculture since 2020. Based in Maseru, serving all of Lesotho.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="shipping.html">Shipping Info</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <ul>
+            <li>📍 Pitso Ground, Maseru</li>
+            <li>📞 +266 6204 9526</li>
+            <li>✉️ itumelengsematle@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FurrowFlow. All rights reserved. | Designed for Lesotho's farmers</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FurrowFlow - Product Catalog</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional internal styles for product categories */
+    .category-title {
+      font-size: 2rem;
+      color: #2d3748;
+      margin: 3rem 0 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid #48bb78;
+    }
+    
+    .category-title:first-of-type {
+      margin-top: 1rem;
+    }
+    
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    
+    .product-image {
+      height: 220px;
+      overflow: hidden;
+      background: #edf2f7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #a0aec0;
+      font-size: 3rem;
+    }
+    
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .product-card:hover .product-image img {
+      transform: scale(1.1);
+    }
+    
+    .product-info {
+      padding: 1.5rem;
+    }
+    
+    .product-info h3 {
+      color: #2d3748;
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+    
+    .product-info .price {
+      font-size: 1.5rem;
+      color: #48bb78;
+      font-weight: 700;
+      margin: 0.5rem 0;
+    }
+    
+    .product-info .description {
+      color: #718096;
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+    
+    .product-info .size {
+      color: #4a5568;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+    
+    .product-info .size span {
+      background: #edf2f7;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      margin-left: 0.5rem;
+    }
+    
+    .btn-add {
+      display: inline-block;
+      background: #48bb78;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .btn-add:hover {
+      background: #2f855a;
+    }
+    
+    @media (max-width: 768px) {
+      .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <h1>Furrow<span>Flow</span></h1>
+        <p>Seeds · Tools · Growth</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shipping.html">Shipping</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Our Product Catalog</h2>
+    
+    <!-- Seeds Category -->
+    <h3 class="category-title">🌱 Seeds</h3>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/p1.jpg" alt="Maize Seeds">
+        </div>
+        <div class="product-info">
+          <h3>Maize (White)</h3>
+          <p class="description">High yield, drought resistant variety perfect for Lesotho climate</p>
+          <p class="size">Size: <span>1kg</span> <span>5kg</span> <span>10kg</span></p>
+          <p class="price">M85/kg</p>
+          <a href="#" class="btn-add">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/p2.jpg" alt="Sugar Beans">
+        </div>
+        <div class="product-info">
+          <h3>Beans (Sugar)</h3>
+          <p class="description">Fast maturing, 60 days harvest, excellent yield</p>
+          <p class="size">Size: <span>1kg</span> <span>5kg</span></p>
+          <p class="price">M120/kg</p>
+          <a href="#" class="btn-add">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Tools & Equipment Category -->
+    <h3 class="category-title">🔧 Tools & Equipment</h3>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/p3.jpg" alt="Heavy Duty Hoe">
+        </div>
+        <div class="product-info">
+          <h3>Hoe (Heavy Duty)</h3>
+          <p class="description">Forged steel head, wooden handle, lifetime warranty</p>
+          <p class="size">Size: <span>Standard</span> <span>Long handle</span></p>
+          <p class="price">M250</p>
+          <a href="#" class="btn-add">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/p4.jpg" alt="Pruning Shears">
+        </div>
+        <div class="product-info">
+          <h3>Pruning Shears</h3>
+          <p class="description">Stainless steel, ergonomic grip, non-slip handles</p>
+          <p class="size">Size: <span>8"</span> <span>10"</span></p>
+          <p class="price">M180</p>
+          <a href="#" class="btn-add">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Fertilizers Category -->
+    <h3 class="category-title">🧪 Fertilizers & Amendments</h3>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/p5.jpg" alt="Organic Compost">
+        </div>
+        <div class="product-info">
+          <h3>Organic Compost</h3>
+          <p class="description">Enriched, ready to use, improves soil structure</p>
+          <p class="size">Size: <span>20kg</span> <span>50kg</span></p>
+          <p class="price">M85/20kg</p>
+          <a href="#" class="btn-add">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/p6.jpg" alt="Kraal Manure">
+        </div>
+        <div class="product-info">
+          <h3>Kraal Manure</h3>
+          <p class="description">Aged, weed-free, rich in organic matter</p>
+          <p class="size">Size: <span>20kg</span> <span>50kg</span></p>
+          <p class="price">M60/20kg</p>
+          <a href="#" class="btn-add">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Irrigation Category -->
+    <h3 class="category-title">💧 Irrigation Kits</h3>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/p7.jpg" alt="Drip Irrigation Starter">
+        </div>
+        <div class="product-info">
+          <h3>Drip Irrigation Starter</h3>
+          <p class="description">Complete kit for 50m² garden, saves 70% water</p>
+          <p class="size">Size: <span>50m²</span></p>
+          <p class="price">M550</p>
+          <a href="#" class="btn-add">Add to Cart</a>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/p8.jpg" alt="Rain Barrel Kit">
+        </div>
+        <div class="product-info">
+          <h3>Rain Barrel Kit</h3>
+          <p class="description">200L with tap, diverter, and mosquito screen</p>
+          <p class="size">Size: <span>200L</span></p>
+          <p class="price">M650</p>
+          <a href="#" class="btn-add">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>FurrowFlow</h3>
+          <p>Your trusted partner in sustainable agriculture since 2020. Based in Maseru, serving all of Lesotho.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="shipping.html">Shipping Info</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <ul>
+            <li>📍 Pitso Ground, Maseru</li>
+            <li>📞 +266 6204 9526</li>
+            <li>✉️ itumelengsematle@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FurrowFlow. All rights reserved. | Designed for Lesotho's farmers</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
